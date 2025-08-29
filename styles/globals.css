@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "8bit";
+  src: url(../stuff/Pixellari.ttf);
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+html,
+body {
+  background-image: url(../images/bg.gif);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px; /* Distância do topo, opcional */
+  color: white;
+  font-family: "8bit";
+}
+
+/*.zoom-fade { 
+  width: 300px;
+}
+
+.zoom-fade:hover {
+  animation: zoomAndFade 1.5s forwards;
+}
+
+@keyframes zoomAndFade {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+} */
+
+.shake {
+  animation: shake 0.5s;
+}
+
+#description {
+  color: white;
+  margin-top: 80px;
+  max-width: 50%;
+  margin: 0 auto;          /* Centraliza horizontalmente */
+  text-align: justify;     /* (opcional) deixa o texto justificado */
+  line-height: 1.6;        /* Melhora a leitura */
+  font-family: "8bit";
+}
+
+#highscore {
+  color: white;  
+  text-align: center;     
+  line-height: 1.6;
+  font-family: "8bit";
+}
+
+#ghighscore {
+  color: pink;  
+  text-align: center;     
+  line-height: 1.6;
+  font-family: "8bit";
+}
+
+#score {
+  color: white; 
+  text-align: center;     
+  line-height: 1.6;
+  display: none;
+  font-family: "8bit";
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+#start {
+  background-color: rgb(218, 211, 211); /* Cor de fundo */
+  color: black; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Remove borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: background-color 0.3s ease; /* Efeito de transição */
+  font-family: "8bit";
+}
+
+#start:hover {
+  background-color: rgb(114, 110, 110)
+}
+
+#minerio {
+  background: none;
+  width: 250px;
+  display: none;
+  border: none; 
+}
+
+#minerio img {
+  background: none;
+  width: 250px;
+  display: none;
+  /* border: none; */
+}
+
+#div-minerio {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#powerup-1, #pw-1 {
+  background:none;
+  width: 100px;
+}
+
+#powerup-2, #pw-2 {
+  background: none;
+  width: 100px;
+}
+
+#powerup-3, #pw-3 {
+  background:none;
+  width: 100px;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px; /* Espaço entre os botões */
+  padding-top: 50px;
+}
+
+.precos {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px; /* Espaço entre os botões */
+  padding-top: 25px;
+  font-family: "8bit";
+}
